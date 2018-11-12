@@ -5,6 +5,16 @@
 using namespace std;
 
 int main(int argc, char** argv) {
-    cout<<"Hello World"<<endl;
+
+    hashMap map = hashMap(true, true);
+
+    map.addKeyValue("dog","dog");
+    map.addKeyValue("tog","wombat");
+    map.addKeyValue("dog", "dog");
+    map.addKeyValue("asdf", "d");
+    map.addKeyValue("a", "b");
+
+    map.printMap();
+
     return 0;
 }

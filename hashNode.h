@@ -9,6 +9,7 @@
 #include <time.h>
 using namespace std;
 class hashNode {
+public:
     friend class hashMap;
     string keyword;
     string *values;
@@ -16,7 +17,7 @@ class hashNode {
     int valuesSize;
     int currSize;
 
-public:
+//remember to put back public
     hashNode();
     hashNode(string s);
     hashNode(string s, string v);

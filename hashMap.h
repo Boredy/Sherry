@@ -24,18 +24,18 @@ class hashMap {
     int collisionct2;
 
 public:
+    hashNode** getMap();
     hashMap(bool hash1, bool coll1);
     void addKeyValue(string k, string v);
     unsigned long calcHash(string k);
     unsigned long calcHash2(string k);
     void getClosestPrime();
     void reHash();
-    int collHash1(hashNode** map, int i, hashNode* h);
-    int collHash2(hashNode** map, int i, hashNode* h);
+    void collHash1(hashNode* i, hashNode* h);
+    void collHash2(int i, hashNode* h);
     int findKey(string k);
     int getIndex(string k);
     void printMap();
     bool isPrime(int x);
-
 };
 #endif //HASH_MAP_HASHMAP_H

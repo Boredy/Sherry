@@ -4,6 +4,7 @@
 
 #include "hashNode.h"
 hashNode::hashNode() {
+    srand(time(NULL));
     keyword = "";
     valuesSize = 0;
     currSize = 0;
@@ -48,7 +49,7 @@ void hashNode::dblArray() {
 }
 
 string hashNode::getRandValue() {
-    srand((unsigned)time(NULL));
+
     if (currSize == 0) {
         return "";
     } else {
